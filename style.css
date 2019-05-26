@@ -29,6 +29,11 @@ body {
     height: 150px;
 }
 
+.x5 {
+    width: 200px;
+    height: 200px;
+}
+
 .bg-orange {
     background-color: #f0a83d;
 }

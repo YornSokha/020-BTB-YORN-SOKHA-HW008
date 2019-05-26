@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    let totalBubble = 5;
+    $(document).on('click', '.bubble', (e) => {
+        let div;
+        if (totalBubble > 20)
+            return;
+
+        let bubbleClass = $(e.target).attr('class');
+        div = "<div class='" + bubbleClass + "'></div>";
+        totalBubble++;
+        $('body').append(div)
+    })
 
     setInterval(function again() {
         $(".bubble").first().animate({
@@ -91,5 +102,18 @@ $(document).ready(function() {
         }, 1500).animate({
             right: (((screen.width) - 100))
         }, 1500, function() { again() })
+    });
+
+    setInterval(function again() {
+        $(".bubble").filter('.x4').animate({
+            top: (((screen.height) - 400))
+        }, 2000).animate({
+            right: '0px',
+            // right: (((screen.width) / 2))
+        }, 2000).animate({
+            top: '0px'
+        }, 2000).animate({
+            right: (((screen.width) - 150))
+        }, 2000, function() { again() })
     });
 });
