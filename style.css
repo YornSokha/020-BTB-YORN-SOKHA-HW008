@@ -1,0 +1,56 @@
+body {
+    background: rgb(221, 98, 255);
+    background: linear-gradient(90deg, rgba(221, 98, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: #333;
+    font: 100% Lato, Arial, Sans Serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.x1 {
+    width: 50px;
+    height: 50px;
+}
+
+.x2 {
+    width: 75px;
+    height: 75px;
+}
+
+.x3 {
+    width: 100px;
+    height: 100px;
+}
+
+.x4 {
+    width: 150px;
+    height: 150px;
+}
+
+.bg-orange {
+    background-color: #f0a83d;
+}
+
+.bg-yellow {
+    background-color: #dcff7c;
+}
+
+.bg-pink {
+    background-color: #f053c1;
+}
+
+.bg-blue {
+    background-color: rgb(91, 219, 202);
+}
+
+.bubble {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+    position: absolute;
+}
